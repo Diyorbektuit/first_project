@@ -80,11 +80,14 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',  # Database engine (e.g., 'django.db.backends.postgresql', 'django.db.backends.mysql', 'django.db.backends.sqlite3', etc.)
+        'NAME': 'railway',  # Database name
+        'USER': 'postgres',  # Database user
+        'PASSWORD': 'tV9evSoY7dVJ9zJ3Pzto',  # Database password
+        'HOST': 'containers-us-west-121.railway.app',  # Database host (leave empty for default)
+        'PORT': '7295',  # Database port (leave empty for default)
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
